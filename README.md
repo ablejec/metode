@@ -1,8 +1,7 @@
 # metode 
 
-## Description
-
-
+## Izbira in uporaba statistiènih metod
+Materiali za seminar
 
 Andrej
 
