@@ -69,3 +69,6 @@ bla*.*
 
 # Example code in package build process
 *-Ex.R
+#RStudio
+.Rproj.user/
+*.Rproj
