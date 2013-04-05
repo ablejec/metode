@@ -7,12 +7,12 @@
 % \VignetteDepends{}
 % \VignettePackage{}
 %\documentclass[a4paper,12pt]{article}
-%\usepackage[slovene]{babel}
-\usepackage[cp1250]{inputenc} %% must be here for Sweave encoding check
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc} %% must be here for Sweave encoding check
 \newcommand{\SVNRevision}{$ $Rev: 3 $ $}
 %\newcommand{\SVNDate}{$ $Date:: 2009-02-2#$ $}
 \newcommand{\SVNId}{$ $Id: program.Rnw 3 2009-02-22 17:36:08Z ABlejec $ $}
-\usepackage{babel}
+%\usepackage{babel}
 %\input{abpkgB}
 %\input{abpkg}
 \input{abBeam}
@@ -26,11 +26,11 @@
 \newcommand{\BV}{}
 \newcommand{\EV}{}
 \newcommand{\myemph}[1]{{\color{Sgreen} \textit{#1}}}
-\SweaveOpts{eps=false,prefix.string=./figs/Metode,concordance=true}
+\SweaveOpts{eps=false,prefix.string=./figs/SwPres,concordance=true}
 %\SweaveOpts{echo=false}
 %\usepackage{lmodern}
 %\input{abfont}
-\SweaveOpts{keep.source=FALSE}
+%\SweaveOpts{keep.source=true}
 % ----------------------------------------------------------------
 \title{Izbira in uporaba statističnih metod\\Seminar}
 \author{A. Blejec}
@@ -70,9 +70,8 @@ options(width=60)
 library(Hmisc)
 #library(xlsReadWrite)
 @
+
 \SweaveInput{clanki.Rnw}
-
-
 
 
 
