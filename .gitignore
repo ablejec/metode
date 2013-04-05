@@ -24,6 +24,7 @@ Cache*/
 bla*.*
 *.bak
 *.tmp
+*.prj
 #
 # gitignore / LaTeX.gitignore
 #

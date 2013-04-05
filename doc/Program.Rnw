@@ -74,7 +74,7 @@ library(Hmisc)
   \item Logika testiranja hipotez
   \item Parametrični, neparametrični in permutacijski testi
   \item Primerjava dveh skupin
-  \item Odvisnost med pojavi\\ (regresija, ANOVA, kontingenca, logistična regresija)
+  \item Odvisnost med pojavi:\\ regresija, ANOVA, kontingenca, logistična regresija
   \item Linearni modeli
 \end{itemize*}
 \section*{Urnik}
