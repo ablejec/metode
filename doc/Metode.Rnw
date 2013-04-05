@@ -70,7 +70,8 @@ options(width=60)
 library(Hmisc)
 #library(xlsReadWrite)
 @
-\
+\SweaveInput{clanki.Rnw}
+
 
 
 
