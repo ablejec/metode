@@ -1,0 +1,29 @@
+% -*- TeX:Rnw -*-
+% ----------------------------------------------------------------
+% .R Sweave part file  *******************************************
+%
+\usepackage[utf8]{inputenc} %% must be here for Sweave encoding check
+<<Author:,echo=FALSE>>=
+###################################################
+##                                               ##
+## (c) Andrej Blejec (andrej.blejec@nib.si)      ##
+##                                               ##
+###################################################
+@
+<<echo=false,results=hide>>=
+
+@
+% ----------------------------------------------------------------
+\section{Članki}
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Uporaba statistike v znanstvenih člankih}
+\begin{itemize}
+  \item Introduction
+  \item \emph{Methods}
+  \item \emph{Results}
+  \item Discussion
+  \item čšž
+\end{itemize}
+\end{frame}
+%% <<<<<<---------------------|

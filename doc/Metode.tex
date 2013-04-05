@@ -1,0 +1,91 @@
+% -*- TeX:Rnw -*-
+% ----------------------------------------------------------------
+% .R Sweave file  ************************************************
+% ----------------------------------------------------------------
+%%
+% \VignetteIndexEntry{}
+% \VignetteDepends{}
+% \VignettePackage{}
+%\documentclass[a4paper,12pt]{article}
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc} %% must be here for Sweave encoding check
+\newcommand{\SVNRevision}{$ $Rev: 3 $ $}
+%\newcommand{\SVNDate}{$ $Date:: 2009-02-2#$ $}
+\newcommand{\SVNId}{$ $Id: program.Rnw 3 2009-02-22 17:36:08Z ABlejec $ $}
+%\usepackage{babel}
+%\input{abpkgB}
+%\input{abpkg}
+\input{abBeam}
+\input{abcmd}
+%\input{abpage}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{amsmath,amssymb}
+\usepackage{colortbl}
+\usepackage{Sweave}
+\input{mysweaveB}
+\newcommand{\BV}{}
+\newcommand{\EV}{}
+\newcommand{\myemph}[1]{{\color{Sgreen} \textit{#1}}}
+\input{./figs/SwPres-concordance}
+%\SweaveOpts{echo=false}
+%\usepackage{lmodern}
+%\input{abfont}
+%\SweaveOpts{keep.source=true}
+% ----------------------------------------------------------------
+\title{Izbira in uporaba statističnih metod\\Seminar}
+\author{A. Blejec}
+%\address{}%
+%\email{}%
+%
+%\thanks{}%
+%\subjclass{}%
+%\keywords{}%
+
+\date{11. in 12. april 2013}%
+%\dedicatory{}%
+%\commby{}%
+\begin{document}
+\mode<article> {\maketitle}
+\mode<presentation> {\frame{\titlepage}}
+\tableofcontents
+% ----------------------------------------------------------------
+\begin{abstract}
+ 
+\end{abstract}
+% -------------------------------------------------------------
+%% Sweave settings for includegraphics default plot size (Sweave default is 0.8)
+%% notice this must be after begin{document}
+% \setkeys{Gin}{width=0.9\textwidth}
+\setkeys{Gin}{width=0.7\textwidth}
+% ----------------------------------------------------------------
+
+% -*- TeX:Rnw -*-
+% ----------------------------------------------------------------
+% .R Sweave part file  *******************************************
+%
+\usepackage[utf8]{inputenc} %% must be here for Sweave encoding check
+% ----------------------------------------------------------------
+\section{Članki}
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Uporaba statistike v znanstvenih člankih}
+\begin{itemize}
+  \item Introduction
+  \item \emph{Methods}
+  \item \emph{Results}
+  \item Discussion
+  \item čšž
+\end{itemize}
+\end{frame}
+%% <<<<<<---------------------|
+
+
+
+
+
+
+% ----------------------------------------------------------------
+\bibliographystyle{amsplain}
+\bibliography{ab-general}
+\end{document}
+% ----------------------------------------------------------------
