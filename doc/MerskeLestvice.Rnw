@@ -48,20 +48,50 @@
 \begin{block}{Lastnosti}
 
 \begin{itemize}
-  \item Oznake omogočajo razlikovanje stanj
+  \item Oznake omogočajo le razlikovanje stanj ( $a \neq b$ )
   \item Nobene naravne urejenosti (je pred/je za)
-  \item Lahko štejemo
+  \item Lahko štejemo pojavljanje stanj
   \item Ne moremo računati npr. povprečja !!!
+  \item Pri rezultatih navajamo po pogostosti
+  \end{itemize}
+\end{block}
+\href{http://ablejec.nib.si/pub/HowTo/HowTo-barplot.pdf}{Barplot}
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Urejenostna lestvica}
+\begin{block}{Primeri}
+
+\begin{itemize}
+  \item Velikost: majhen, srednji, velik
+  \item Velikost majic: XS, S, M, L, XL, XXL
+  \item Stopnja onesnaženosti vode: 1 neonesnažena, 2 malo,\\3 srednje, 4 močno, 5 popolnoma onesnažena 
+  \item Temperatura: nizka, srednja, visoka
+\end{itemize}
+\end{block}
+\begin{block}{Lastnosti}
+
+\begin{itemize}
+  \item Oznake omogočajo urejeno primerjavo stanj ( $a \prec b$ )
+  \item Naraven vrstni red stanj (je pred/je za)
+  \item Stopenjske lestvice (Likert)
+  \item Lahko štejemo pojavljanje stanj
+  \item Ne moremo računati npr. povprečja !!!
+  \item Pri rezultatih navajamo v vrstnem redu stanj
   \end{itemize}
 \end{block}
 
 \end{frame}
 %% <<<<<<---------------------|
 
+
+
 %% |--------------------->>>>>>
 \begin{frame}[fragile]
-\frametitle{Imenska lestvica}
-\begin{block}{Dihotomna lestvica}
+\frametitle{Opisna dihotomna lestvica}
+\begin{block}{Dihotomna lestvica: \hfill dve stanji, označeni kot 0 in 1}
 Temperatura
 \begin{description}
   \item[0] Neprijetna
@@ -70,7 +100,7 @@ Temperatura
 \vspace{6pt}
 \hrule
 \vspace{6pt}
-\emph{Temperatura je prijetna} (FALSE=0 / TRUE = 1)
+\emph{Temperatura je prijetna} (FALSE = 0 / TRUE = 1)
 
 \end{block}
 <<echo=FALSE>>=
@@ -89,6 +119,72 @@ cat(paste(mean(nx)*100,"%",sep=""),"enot ima lastnost iz trditve (prijetno)")
 \end{frame}
 %% <<<<<<---------------------|
 
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Razmična lestvica}
+\begin{block}{Primeri}
+
+\begin{itemize}
+  \item Velikost: merjena v centimetrih (ali palcih)
+  \item Nadmorska višina
+  \item pH
+  \item Temperatura: merjena v stopinjah Celzija ali Farenheita
+\end{itemize}
+\end{block}
+\begin{block}{Lastnosti}
+
+\begin{itemize}
+  \item Izmerjene vrednosti lahko odštevamo ( $a - b$ ) 
+  \item Enake rezlike imajo enak pomen pri vseh merjenih nivojih
+  \item Linearna povezava med merskimi sistemi \\
+   $F = 32 + 1.8 C$ \hfill $(F+40)=1.8 (C+40)$
+  
+  \end{itemize}
+\end{block}
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Celzij in Fahrenheit \hfill $F = 32 + 1.8 C$}
+\begin{center}
+<<echo=FALSE>>=
+C <- c(-10, 0, 10, 30, 80, 100)
+F <- 32 + 1.8*C
+cat("C",formatC(C,width=4))
+cat("F",formatC(F,width=4))
+@
+\end{center}
+
+\end{frame}
+%% <<<<<<---------------------|
+
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Razmernostna lestvica}
+\begin{block}{Primeri}
+
+\begin{itemize}
+  \item Svetlobni tok (merjen v Wattih)
+  \item Gostota snovi: $kg/m^3$
+  \item Masa: merjena v kg ali funtih
+  \item Temperatura: merjena v stopinjah Kelvina
+\end{itemize}
+\end{block}
+\begin{block}{Lastnosti}
+
+\begin{itemize}
+  \item Razmerja vrednosti imajo smisel ( $ a / b $)
+  \item Naravno določena ničla
+  \item Meritve so lahko le pozitivne
+  \item Enake rezlike \textbf{nimajo} enakega pomen pri vseh merjenih nivojih
+  \item Sorazmerje med merskimi sistemi \\
+   $1 funt = 454 g $ 
+  \end{itemize}
+\end{block}
+\end{frame}
+%% <<<<<<---------------------|
 
 
 % ----------------------------------------------------------------
