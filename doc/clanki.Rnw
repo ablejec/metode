@@ -23,7 +23,6 @@
   \item \emph{Methods}
   \item \emph{Results}
   \item Discussion
-  \item čšž
 \end{itemize}
 \end{frame}
 %% <<<<<<---------------------|

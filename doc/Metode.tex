@@ -74,11 +74,104 @@
   \item \emph{Methods}
   \item \emph{Results}
   \item Discussion
-  \item čšž
 \end{itemize}
 \end{frame}
 %% <<<<<<---------------------|
+% -*- TeX:Rnw -*-
+% ----------------------------------------------------------------
+% .R Sweave part file  *******************************************
+%
+\usepackage[utf8]{inputenc} %% must be here for Sweave encoding check
 
+\section[Merjenje]{Merske lestvice}
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Merske lestvice \hfill (Stevens, Science, 1946)}
+
+\begin{block}{Opisna \hfill \emph{atributivna}}
+  \begin{itemize}
+    \item Imenska \hfill \emph{nominalna}
+    \item Urejenostna \hfill \emph{ordinalna}
+  \end{itemize}
+\end{block}
+
+\begin{block}{Številska \hfill \emph{numerična}}
+  \begin{itemize}
+    \item Razmična \hfill \emph{intervalna}
+    \item Razmernostna \hfill \emph{racionalna}
+  \end{itemize}
+\end{block}
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Imenska lestvica}
+\begin{block}{Primeri}
+
+\begin{itemize}
+  \item Spol: moški, ženski ; M / F
+  \item Barva: rdeča, rumena, modra, zelena
+  \item Habitat: gozd, močvirje, travnik
+  \item Temperatura: prijetna, neprijetna
+\end{itemize}
+\end{block}
+\begin{block}{Lastnosti}
+
+\begin{itemize}
+  \item Oznake omogočajo razlikovanje stanj
+  \item Nobene naravne urejenosti (je pred/je za)
+  \item Lahko štejemo
+  \item Ne moremo računati npr. povprečja !!!
+  \end{itemize}
+\end{block}
+
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Imenska lestvica}
+\begin{block}{Dihotomna lestvica}
+Temperatura
+\begin{description}
+  \item[0] Neprijetna
+  \item[1] Prijetna
+\end{description}
+\vspace{6pt}
+\hrule
+\vspace{6pt}
+\emph{Temperatura je prijetna} (FALSE=0 / TRUE = 1)
+
+\end{block}
+\begin{Schunk}
+\begin{Soutput}
+n = 10
+\end{Soutput}
+\begin{Soutput}
+P P P N N P P N N P
+\end{Soutput}
+\begin{Soutput}
+1 1 1 0 0 1 1 0 0 1
+\end{Soutput}
+\begin{Soutput}
+1+1+1+0+0+1+1+0+0+1 = 6 / 10
+\end{Soutput}
+\begin{Soutput}
+Povprečje: 0.6
+\end{Soutput}
+\begin{Soutput}
+60% enot ima lastnost iz trditve (prijetno)
+\end{Soutput}
+\end{Schunk}
+
+\end{frame}
+%% <<<<<<---------------------|
+
+
+
+% ----------------------------------------------------------------
 
 
 

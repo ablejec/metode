@@ -1,0 +1,94 @@
+% -*- TeX:Rnw -*-
+% ----------------------------------------------------------------
+% .R Sweave part file  *******************************************
+%
+\usepackage[utf8]{inputenc} %% must be here for Sweave encoding check
+<<Author:,echo=FALSE>>=
+###################################################
+##                                               ##
+## (c) Andrej Blejec (andrej.blejec@nib.si)      ##
+##                                               ##
+###################################################
+@
+
+\section[Merjenje]{Merske lestvice}
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Merske lestvice \hfill (Stevens, Science, 1946)}
+
+\begin{block}{Opisna \hfill \emph{atributivna}}
+  \begin{itemize}
+    \item Imenska \hfill \emph{nominalna}
+    \item Urejenostna \hfill \emph{ordinalna}
+  \end{itemize}
+\end{block}
+
+\begin{block}{Številska \hfill \emph{numerična}}
+  \begin{itemize}
+    \item Razmična \hfill \emph{intervalna}
+    \item Razmernostna \hfill \emph{racionalna}
+  \end{itemize}
+\end{block}
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Imenska lestvica}
+\begin{block}{Primeri}
+
+\begin{itemize}
+  \item Spol: moški, ženski ; M / F
+  \item Barva: rdeča, rumena, modra, zelena
+  \item Habitat: gozd, močvirje, travnik
+  \item Temperatura: prijetna, neprijetna
+\end{itemize}
+\end{block}
+\begin{block}{Lastnosti}
+
+\begin{itemize}
+  \item Oznake omogočajo razlikovanje stanj
+  \item Nobene naravne urejenosti (je pred/je za)
+  \item Lahko štejemo
+  \item Ne moremo računati npr. povprečja !!!
+  \end{itemize}
+\end{block}
+
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Imenska lestvica}
+\begin{block}{Dihotomna lestvica}
+Temperatura
+\begin{description}
+  \item[0] Neprijetna
+  \item[1] Prijetna
+\end{description}
+\vspace{6pt}
+\hrule
+\vspace{6pt}
+\emph{Temperatura je prijetna} (FALSE=0 / TRUE = 1)
+
+\end{block}
+<<echo=FALSE>>=
+set.seed(1234)
+n <- 10
+x <- sample(c(rep("P",6),rep("N",n-6)))
+nx <- (x=="P")+0
+cat("n =",n)
+cat(x)
+cat(nx)
+cat(paste(paste(nx,collapse="+"),"=",sum(nx),"/",n))
+cat("Povprečje:",mean(nx))
+cat(paste(mean(nx)*100,"%",sep=""),"enot ima lastnost iz trditve (prijetno)")
+@
+
+\end{frame}
+%% <<<<<<---------------------|
+
+
+
+% ----------------------------------------------------------------

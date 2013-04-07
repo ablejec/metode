@@ -72,7 +72,7 @@ library(Hmisc)
 @
 
 \SweaveInput{clanki.Rnw}
-
+\SweaveInput{MerskeLestvice}
 
 
 
